@@ -44,7 +44,6 @@ export async function sendMail({
 }
 
 export function compileActivationTemplate(name: string, url: string) {
-  console.log(name, url, "here is the url and name");
   const template = Handlebars.compile(activationTemplate);
   const htmlBody = template({
     name,
